@@ -1,0 +1,20 @@
+.flexbox {
+    display: flex;
+    justify-content: center;
+}
+
+.outline-main {
+    text-align: center;
+    border: solid black 1px;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.outline-search {
+    float: left;
+    width: 30%;
+}
+
+.outline-history {
+
+}
