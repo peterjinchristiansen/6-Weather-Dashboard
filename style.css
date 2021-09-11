@@ -1,6 +1,7 @@
 .flexbox {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .outline-main {
@@ -10,11 +11,70 @@
     width: 80%;
 }
 
+.outline-navigate {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+}
+
 .outline-search {
     float: left;
-    width: 30%;
+    width: 100%;
+    border: solid black 1px;
+    border-radius: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+#searchBar {
+    width: 90%;
+}
+
+#searchButton {
+    border-radius: 10px;
+    width: 90%;
+    margin-top: 10px;
+    height: 30px;
+    background-color: blue;
+    color: white;
 }
 
 .outline-history {
+    border: solid black 1px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
 
+.weather {
+    display: flex;
+    width: 65%;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#weatherDisplay {
+    border: solid black 1px;
+    border-radius: 10px;
+    width: 90%;
+    padding: 10px;
+}
+
+#forecastDisplay {
+    border: solid black 1px;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 90%;
+    padding: 10px;
+}
+
+#box1, #box2, #box3, #box4, #box5 {
+    border: black solid 1px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 10%;
+    float: left;
 }
