@@ -30,7 +30,7 @@ function submit(event) {
 
 function submitPartTwo(cityName) {
 
-	var api_1 = 'http://api.openweathermap.org/data/2.5/forecast?q=';
+	var api_1 = 'https://api.openweathermap.org/data/2.5/forecast?q=';
 	var api_2 = '&appid=35da9ea72100aa99f12e733919325eb0';
 
 
