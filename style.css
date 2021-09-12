@@ -1,7 +1,17 @@
+body {
+    background-image: url(./images/minimal-background-pattern-wordpress-6.jpg);
+    font-family: 'Lato', sans-serif;
+}
+
 .flexbox {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.flexbox-search {
+    display: flex;
+    justify-content: space-around;
 }
 
 .outline-main {
@@ -13,8 +23,9 @@
 
 .outline-navigate {
     display: flex;
-    width: 30%;
+    width: 20%;
     flex-direction: column;
+    margin-top: 10px;
 }
 
 .outline-search {
@@ -40,17 +51,28 @@
     color: white;
 }
 
+#clearHistory {
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 10px;
+    height: 30px;
+    background-color: red;
+    color: black;
+}
+
 #outline-history {
     border: solid black 1px;
     border-radius: 10px;
     width: 100%;
     padding: 10px;
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .weather {
     display: flex;
-    width: 65%;
+    width: 75%;
     flex-direction: column;
     margin-top: 10px;
     padding: 10px;
@@ -69,17 +91,71 @@
     margin-top: 10px;
     width: 90%;
     padding: 10px;
-}
-
-#box1, #box2, #box3, #box4, #box5 {
-    border: black solid 1px;
-    border-radius: 10px;
-    padding: 10px;
-    width: 10%;
-    float: left;
+    text-align: center;
 }
 
 .historyButton {
     width: 80%;
     color: red;
+}
+
+.forecastDiv {
+    border: black solid 1px;
+    border-radius: 10px;
+    width: 18%;
+    background-color: navy;
+    padding: 10px;
+    margin: 10px;
+}
+
+.forecastHeading {
+    color: white;
+}
+
+.forecastImage {
+    color: pink;
+}
+
+.forecastParagraph {
+    color: white;
+}
+
+#uviLow {
+    background-color: green;
+}
+
+#uviMod {
+    background-color: yellow;
+    color: black;
+}
+
+#uviHigh {
+    background-color: red;
+}
+
+.flexbox-uvi {
+    display: flex;
+    justify-content: left;
+}
+
+.uvColor {
+    text-align: center;
+    width: 40px;
+    margin-left: 5px;
+    color: white;
+    border-radius: 3px;
+}
+
+.thisIsMyHistory {
+    margin: 10px;
+    padding: 5px;
+    color: blue;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+.thisIsMyHistory:hover {
+    background-color: crimson;
+    color: cyan;
+    transition: 1s all;
 }
