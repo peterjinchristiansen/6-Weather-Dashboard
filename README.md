@@ -4,7 +4,7 @@
   
 ## Description
   
-This project uses Third Party APIs to get the weather forecast of a user-inputted city. It has a history function to display previously searched cities, which can be cleared.
+    This project uses Third Party APIs to get the weather forecast of a user-inputted city. It has a history function to display previously searched cities, which can be cleared.
 
 ---
   
