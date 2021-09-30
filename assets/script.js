@@ -58,7 +58,7 @@ function submitPartTwo(cityName) {
 		
 }
 
-function newFunction(apiurl2) {
+function newFunction(apiurl2, cityName) {
 	var forecastDisplayEl = document.querySelector('#dayByDay');
 	forecastDisplayEl.innerHTML = "";
 
@@ -100,6 +100,9 @@ function newFunction(apiurl2) {
 			} else {
 				UVI2.setAttribute('id', 'uviHigh');
 			}
+
+			var fiveDayHeading = document.getElementById('fiveDayForecast')
+			fiveDayHeading.innerText = "5 Day Forecast for " + cityName
 
 			for(i = 1; i < 6; i++) {
 
@@ -156,23 +159,23 @@ function newFunction(apiurl2) {
 function iconFunction(weatherIcon, picture) {
 	var slicedWeatherIcon = weatherIcon.slice(0, -1);
 	if(slicedWeatherIcon == "01") {
-		picture.setAttribute("src", "./images/01d@2x.png");
+		picture.setAttribute("src", "./assets/images/01d@2x.png");
 	} else if(slicedWeatherIcon == "02") {
-		picture.setAttribute("src", "./images/02d@2x.png");
+		picture.setAttribute("src", "./assets/images/02d@2x.png");
 	} else if(slicedWeatherIcon == "03") {
-		picture.setAttribute("src", "./images/03d@2x.png");
+		picture.setAttribute("src", "./assets/images/03d@2x.png");
 	} else if(slicedWeatherIcon == "04") {
-		picture.setAttribute("src", "./images/04d@2x.png");
+		picture.setAttribute("src", "./assets/images/04d@2x.png");
 	} else if(slicedWeatherIcon == "09") {
-		picture.setAttribute("src", "./images/09d@2x.png");
+		picture.setAttribute("src", "./assets/images/09d@2x.png");
 	} else if(slicedWeatherIcon == "10") {
-		picture.setAttribute("src", "./images/10d@2x.png");
+		picture.setAttribute("src", "./assets/images/10d@2x.png");
 	} else if(slicedWeatherIcon == "11") {
-		picture.setAttribute("src", "./images/11d@2x.png");
+		picture.setAttribute("src", "./assets/images/11d@2x.png");
 	} else if(slicedWeatherIcon == "13") {
-		picture.setAttribute("src", "./images/13d@2x.png");
+		picture.setAttribute("src", "./assets/images/13d@2x.png");
 	} else if(slicedWeatherIcon == "50") {
-		picture.setAttribute("src", "./images/50d@2x.png");
+		picture.setAttribute("src", "./assets/images/50d@2x.png");
 	}
 }
 
